@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         //**************** APIキーの設定 **************
-        NCMB.initialize(this.getApplicationContext(),"26d1dc5a7904734b7430878e4d427904a2e4a6bfb3134d9a7c91ff0fb446aab9",
-                "3e75a0395e6d2bfeee0a4486ba3c37b1118d7004271d05feb4a017dfadce1b06");
+        NCMB.initialize(this.getApplicationContext(), "YOUR_APPLICATION_KEY",
+                "YOUR_CLIENT_KEY");
         setContentView(R.layout.activity_main);
 
         _btnShow = (Button) findViewById(R.id.btnShow);
