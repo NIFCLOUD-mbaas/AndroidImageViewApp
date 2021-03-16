@@ -2,8 +2,9 @@ package mbaas.com.nifcloud.androidimageviewapp;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         //**************** APIキーの設定 **************
         NCMB.initialize(this.getApplicationContext(), "YOUR_APPLICATION_KEY",
                 "YOUR_CLIENT_KEY");
-
         setContentView(R.layout.activity_main);
 
         _btnShow = (Button) findViewById(R.id.btnShow);
