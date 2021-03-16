@@ -19,13 +19,12 @@ import org.junit.runner.RunWith;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
-import static androidx.test.espresso.matcher.RootMatchers.isDialog;
 import static androidx.test.espresso.matcher.ViewMatchers.*;
 import static mbaas.com.nifcloud.androidimageviewapp.ImageViewHasDrawableMatcher.hasDrawable;
 import static org.hamcrest.Matchers.not;
 
 @RunWith(AndroidJUnit4ClassRunner.class)
-public class ApplicationTest {
+public class DisplayImageSuccessTest {
     @Rule
     public final ActivityTestRule<MainActivity> main = new ActivityTestRule<>(MainActivity.class, true);
 
@@ -47,15 +46,6 @@ public class ApplicationTest {
         onView(withId(R.id.btnShow)).check(matches(isDisplayed())).perform(click());
         onView(isRoot()).perform(waitFor(800));
         onView(withId(R.id.imgShow)).check(matches(hasDrawable()));
-    }
-
-    @Test
-    public void validateDisplayImageFail() {
-        onView(withText("ImageViewSample")).check(matches(isDisplayed()));
-        onView(withId(R.id.imgShow)).check(matches(not(hasDrawable())));
-        onView(withId(R.id.btnShow)).check(matches(isDisplayed())).perform(click());
-        onView(isRoot()).perform(waitFor(800));
-        onView(withText("Notification from NifCloud")).inRoot(isDialog()).check(matches(isDisplayed()));
     }
 
     /**
