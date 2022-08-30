@@ -2,8 +2,8 @@ package mbaas.com.nifcloud.androidimageviewapp;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,8 +17,6 @@ import com.nifcloud.mbaas.core.NCMBFile;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity";
-    private static final int REQUEST_RESULT = 0;
     Button _btnShow;
     ImageView _iv;
 

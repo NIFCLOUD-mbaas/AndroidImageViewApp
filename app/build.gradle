@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "mbaas.com.nifcloud.androidimageviewapp"
-        minSdkVersion 15
-        targetSdkVersion 27
+        minSdkVersion 26
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
@@ -21,7 +21,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
-    implementation 'com.android.support:appcompat-v7:27.0.1'
-    implementation 'com.google.code.gson:gson:2.3.1'
-    implementation files('libs/NCMB.jar')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.nifcloud.mbaas:ncmb_android:4.1.0'
 }
