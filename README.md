@@ -14,9 +14,9 @@
 
 ## 動作環境
 
-* MacOS Mojave v10.14.6 (18G103)
-* Android studio: 3.4.1
-* Simulator: Pixel 2 Android OS Version 10
+* MacOS Big Sur 11.6 
+* Android Studio Arctic Fox 2020.3.1
+* Pixle 3 - Android 12 (Simulator)
 * SDK v2系だと動作しないので注意
 
 ※上記内容で動作確認をしています。
